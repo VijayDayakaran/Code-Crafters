@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor's Profile</title>
+    <link rel="stylesheet" href="doc.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+<body>
+    <header>
+        <h1>Dr. Aditya</h1>
+    </header>
+    <section>
+        <img class="doctor-image" src="img/Doc2_img.jpg" alt="Doctor Image">
+        <h1>Dr. Aditya</h1>
+        <p class="specialization"><strong>Specialization:</strong> Oncology</p>
+        <div class="description">
+            <p>Dr. Aditya  brings over 4 years of practice as an esteemed oncologist, specializing in personalized cancer treatments. His extensive research background and compassionate approach have resulted in improved outcomes for patients battling complex malignancies.</p><br>
+            <p>Education: MS, SDM Dharwad</p>
+            <p>Experience: 4 years</p>
+        </div>
+    <div class="user-form">
+      <form id="appointmentForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="gender">Gender:</label>
+        <input type="text" id="gender" name="gender" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="issue">Describe Your Issue:</label>
+        <textarea id="issue" name="issue" rows="4" cols="50" required></textarea>
+
+        <button class="appointment-btn appointment-free">Schedule Free call!</button>
+        <button class="appointment-btn appointment-paid" type="submit">Book Appointment for ₹2000</button>
+      </form>
+    </div>
+  </section>
+  <script>
+    const freeTrialBtn = document.querySelector('.appointment-free');
+    const paidAppointmentBtn = document.querySelector('.appointment-paid');
+
+    freeTrialBtn.addEventListener('click', function() {
+      alert('You will get a call within the next 5 mins.');
+    });
+
+    paidAppointmentBtn.addEventListener('click', function(event) {
+      event.preventDefault();
+
+      alert('Your appointment details have been sent to your registered email address.');
+    });
+  </script>
+</body>
+</html>

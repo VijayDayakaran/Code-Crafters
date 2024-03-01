@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - DocEase</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: linear-gradient(135deg, #3498db 0%, #2ecc71 100%);
+      color: #fff;
+    }
+
+    .contact-us-container {
+      width: 800px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-us-header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #e74c3c;
+    }
+
+    .contact-us-info {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .contact-us-info p {
+      margin-bottom: 15px;
+    }
+
+    .service-highlight {
+      color: #e74c3c;
+      font-weight: bold;
+    }
+
+    .contact-form {
+      margin-top: 30px;
+    }
+
+    .form-label {
+      display: block;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+    }
+
+    .form-submit {
+      background: linear-gradient(135deg, #e74c3c 0%, #3498db 100%);
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .form-submit:hover {
+      background: linear-gradient(135deg, #e74c3c 0%, #2980b9 100%);
+    }
+
+    .form-ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .form-ul li {
+      margin-bottom: 10px;
+    }
+
+    .form-ul li a {
+      color: #e74c3c;
+      text-decoration: none;
+    }
+
+    .form-ul li a:hover {
+      text-decoration: underline;
+    }
+    h3{
+        color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="contact-us-container">
+    <h2 class="contact-us-header">Contact Us</h2>
+    <div class="contact-us-info">
+      <p>Have a question or need assistance? Feel free to reach out to us!</p>
+
+      <p><span class="service-highlight">24/7 Customer Service:</span> Our dedicated support team is available around the clock to assist you with any inquiries.</p>
+
+      <p>Connect with us via the following options:</p>
+
+      <ul class="form-ul">
+        <li>Email: <a href="mailto:info@docease.com">docease@gmail.com</a></li>
+        <li>Phone: <a href="tel:+123456789">7899784514</a></li>
+      </ul>
+    </div>
+
+    <div class="contact-form">
+      <h3>Send us a Message</h3>
+      <form>
+        <label for="name" class="form-label">Your Name:</label>
+        <input type="text" id="name" name="name" class="form-input" required>
+
+        <label for="email" class="form-label">Your Email:</label>
+        <input type="email" id="email" name="email" class="form-input" required>
+
+        <label for="message" class="form-label">Your Message:</label>
+        <textarea id="message" name="message" class="form-input" rows="4" required></textarea>
+
+        <button type="submit" class="form-submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

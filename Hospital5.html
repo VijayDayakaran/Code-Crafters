@@ -1,147 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DocEase</title>
+    <title>Hospital Profile</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #e6f7ff; /* Light Blue */
-        }
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: #3399ff; /* Blue */
-            color: #fff;
-        }
-        section {
-            margin: 20px;
-        }
-        .hospital-image {
-            width: 100%;
-            max-width: 600px;
-            margin: 20px auto;
-            display: block;
-        }
-        .doctor-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .doctor {
-            width: 30%;
-            margin: 10px;
-            padding: 15px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            cursor: pointer;
-            transition: transform 0.3s ease-in-out;
-        }
-        /* Different colors for each doctor */
-        .doctor:nth-child(odd) {
-            background-color: #ffcccb; /* Light Coral */
-        }
-        .doctor:nth-child(even) {
-            background-color: #ffcccb; /* Light Green */
-        }
-        .doctor:hover {
-            transform: scale(1.05);
-        }
-        .doctor img {
-            width: 100%;
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
-        h3 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-        .doctor img {
-    width: 100%;
-    border-radius: 0%; /* Set border-radius to 0% for square images */
-    margin-bottom: 10px;
-    border-radius: 10px;
-}
-.hospital-image {
-    width: 100%;
-    max-width: 300px; /* Set a smaller max-width for the hospital image */
-    margin: 20px auto;
-    display: block;
-}
-header {
-    text-align: center;
-    padding: 20px;
-    background: linear-gradient(135deg, #3498db, #2ecc71); /* Gradient from Light Blue to Light Green */
-    color: #fff;
-}
-
-header h1 {
-    margin: 0; /* Remove default margin for h1 */
-    font-size: 2em; /* Adjust the font size as needed */
-    border-radius: 10px; /* Add rounded corners for a stylish look */
-}
-
-</style>
+    <link rel="stylesheet" href="hospital.css">
 </head>
+
 <body>
     <header>
-        <h1>Apollo Hospitals</h1> <!-- Dark Blue -->
+        <h1>Maharaja Hospital</h1>
     </header>
     <section>
-        <img class="hospital-image" src="hosp1.jpg" alt="Hospital Image">
-        <p>Hospital Address: 123 Hospital Street, Cityville</p>
+        <img class="hospital-image" src="img/hospital5_img.jpg" alt="Hospital Image">
+        <p>Hospital Address: Veersandra, Yelhanka, Bengaluru</p>
         <div class="doctor-container">
-            <!-- Doctor 1 -->
+
             <div class="doctor" onclick="goToDoctorPage('Dr. John Doe', 'doctor1.html')">
-                <img src="doc1.jpg" alt="Doctor 1">
-                <h3>Dr. John Doe</h3>
-                <p>Education: MD, Medical University</p>
-                <p>Experience: 10 years</p>
+                <a href="H1_D1.html">
+                    <img src="img/Doc1_img.jpg" alt="Doctor 1">
+                    <h3>Dr. Surya</h3>
+                    <center><h4>Cardiologist</h4></center>
+                    <p>Education: MD, KIMS Dharwad</p>
+                    <p>Experience: 10 years</p>
+                </a>
             </div>
-            <!-- Doctor 2 -->
+
             <div class="doctor" onclick="goToDoctorPage('Dr. Jane Smith', 'doctor2.html')">
-                <img src="doc3.jpg" alt="Doctor 2">
-                <h3>Dr. Jane Smith</h3>
-                <p>Education: PhD, Healthcare Sciences</p>
-                <p>Experience: 8 years</p>
+                <a href="H1_D2.html">
+                    <img src="img/Doc2_img.jpg" alt="Doctor 2">
+                    <h3>Dr. Aditya</h3>
+                    <center><h4>Oncologist</h4></center>
+                    <p>Education: MS, SDM Dharwad</p>
+                    <p>Experience: 4 years</p>
+                </a>
             </div>
-            <!-- Doctor 3 -->
+
             <div class="doctor" onclick="goToDoctorPage('Dr. Michael Johnson', 'doctor3.html')">
-                <img src="doc4.jpg" alt="Doctor 3">
-                <h3>Dr. Michael Johnson</h3>
-                <p>Education: MBBS, Medical College</p>
-                <p>Experience: 12 years</p>
+                <a href="H1_D3.html">
+                    <img src="img/Doc3_img.jpg" alt="Doctor 3">
+                    <h3>Dr. Meena</h3>
+                    <center><h4>Neurosurgeon</h4></center>
+                    <p>Education: MBBS, AIIMS Delhi</p>
+                    <p>Experience: 12 years</p>
+                </a>
             </div>
-            <!-- Doctor 4 -->
+
             <div class="doctor" onclick="goToDoctorPage('Dr. Emily Brown', 'doctor4.html')">
-                <img src="doc5.jpg" alt="Doctor 4">
-                <h3>Dr. Emily Brown</h3>
-                <p>Education: MD, Health Sciences</p>
-                <p>Experience: 6 years</p>
+                <a href="H1_D4.html">
+                    <img src="img/Doc4_img.jpg" alt="Doctor 4">
+                    <h3>Dr. Shridar</h3>
+                    <center><h4>Pediatrician</h4></center>
+                    <p>Education: MD, KLE Haveri</p>
+                    <p>Experience: 6 years</p>
+                </a>
             </div>
-            <!-- Doctor 5 -->
+
             <div class="doctor" onclick="goToDoctorPage('Dr. William Davis', 'doctor5.html')">
-                <img src="doc6.jpg" alt="Doctor 5">
-                <h3>Dr. William Davis</h3>
-                <p>Education: MBBS, Medical University</p>
-                <p>Experience: 9 years</p>
+                <a href="H1_D5.html">
+                    <img src="img/Doc5_img.jpg" alt="Doctor 5">
+                    <h3>Dr. Raveesh</h3>
+                    <center><h4>Orthopedic Surgeon</h4></center>
+                    <p>Education: MBBS, Bombay University</p>
+                    <p>Experience: 9 years</p>
+                </a>
             </div>
-            <!-- Doctor 6 -->
+
             <div class="doctor" onclick="goToDoctorPage('Dr. Sarah White', 'doctor6.html')">
-                <img src="doc7.jpg" alt="Doctor 6">
-                <h3>Dr. Sarah White</h3>
-                <p>Education: PhD, Healthcare Sciences</p>
-                <p>Experience: 7 years</p>
+                <a href="H1_D6.html">
+                    <img src="img/Doc6_img.jpg" alt="Doctor 6">
+                    <h3>Dr. Vardhan</h3>
+                    <center><h4>Gastroenterologist</h4></center>
+                    <p>Education: MS, KIMS Dharwad</p>
+                    <p>Experience: 20 years</p>
+                </a>
             </div>
-            <!-- Add more doctors with different colors -->
+
         </div>
 
         <script>
@@ -150,5 +86,9 @@ header h1 {
             }
         </script>
     </section>
+    <footer>
+        <p>&copy; 2024 DocEase. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>

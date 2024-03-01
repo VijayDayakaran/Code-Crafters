@@ -5,96 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DocEase</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-        }
-
-        header {
-            padding: 1px;
-            color: black;
-            text-align: center;
-        }
-
-        nav {
-            background-color: black;
-            overflow: hidden;
-            display: flex;
-            justify-content: space-around;
-            border-bottom: 1px solid black; /* Add a border below the navbar */
-        }
-
-        nav a {
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        .search-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 14px;
-        }
-
-        input[type=text] {
-            padding: 10px;
-            font-size: 17px;
-            border: 1px solid black; /* Add a border to the search input */
-            border-radius: 20px;
-            width: 300px; /* Adjust the width as needed */
-        }
-
-        #hospitals {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 20px;
-        }
-
-        .hospital {
-            width: 30%;
-            margin: 10px;
-            padding: 20px;
-            border: 1px solid black;
-            border-radius: 8px;
-        }
-        .hospital img {
-            width: 100%;
-            border-radius: 8px; /* Add this line to round the edges of the images */
-        }
-        .hospital:hover {
-            transform: scale(1.05); /* Increase the size on hover */
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
-            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth animation */
-        }
-        footer {
-            background-color: black;
-            color: white;
-            padding: 0px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="front_pg.css">
 </head>
 <body>
 
     <nav>
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Login</a>
+        <a href="front_pg.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="login.html">Log Out</a>
     </nav>
 
     <header>
@@ -108,7 +27,7 @@
     </div>
 
     <div id="hospitals">
-        <!-- Hospital 1 -->
+ 
         <div class="hospital">
             <a href="Hospital1.html" target="_blank">
                 <img src="img/hospital1_img.webp" alt="Hospital 1 Image" style="width:100%">
@@ -117,7 +36,7 @@
             </a>
         </div>
 
-        <!-- Hospital 2 -->
+       
         <div class="hospital">
             <a href="Hospital2.html" target="_blank">
                 <img src="img/hospital2_img.jpg" alt="Hospital 2 Image" style="width:100%">
@@ -126,7 +45,6 @@
             </a>
         </div>
 
-        <!-- Hospital 3 -->
         <div class="hospital">
             <a href="Hospital3.html" target="_blank">
                 <img src="img/hospital3_img.jpg" alt="Hospital 3 Image" style="width:100%">
@@ -135,7 +53,6 @@
             </a>
         </div>
 
-        <!-- Hospital 4 -->
         <div class="hospital">
             <a href="Hospital4.html" target="_blank">
                 <img src="img/hospital4_img.jpg" alt="Hospital 4 Image" style="width:100%">
@@ -144,7 +61,6 @@
             </a>
         </div>
 
-        <!-- Hospital 5 -->
         <div class="hospital">
             <a href="Hospital5.html" target="_blank">
                 <img src="img/hospital5_img.jpg" alt="Hospital 5 Image" style="width:100%">
@@ -153,7 +69,6 @@
             </a>
         </div>
 
-        <!-- Hospital 6 -->
         <div class="hospital">
             <a href="Hospital6.html" target="_blank">
                 <img src="img/hospital6_img.jpg" alt="Hospital 6 Image" style="width:100%">

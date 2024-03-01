@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor's Profile</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="doc.css">
+</head>
+<body>
+    <header>
+        <h1>Dr. Vardhan</h1>
+    </header>
+    <section>
+        <img class="doctor-image" src="img/Doc6_img.jpg" alt="Doctor Image">
+        <h1>Dr. Vardhan</h1>
+        <p class="specialization"><strong>Specialization:</strong>Gastroenterology</p>
+        <div class="description">
+            <p>Dr. Vardhan is a distinguished gastroenterologist with over 20 years of experience in diagnosing and treating gastrointestinal disorders. His commitment to patient care and continuous learning has led to innovative approaches in managing complex digestive health issues.</p><br>
+            <p>Education: MS, KIMS Dharwad</p>
+            <p>Experience: 20 years</p>
+            
+        </div>
+        <div class="user-form">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="gender">Gender:</label>
+                <input type="text" id="gender" name="gender" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="issue">Describe Your Issue:</label>
+                <textarea id="issue" name="issue" rows="4" cols="50" required></textarea>
+
+                <button class="appointment-btn">Schedule a free call</button>
+                <button class="appointment-btn">Book Appointment for ₹2000</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

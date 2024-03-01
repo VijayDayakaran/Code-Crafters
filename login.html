@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - DocEase</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: linear-gradient(135deg, #3498db, #2ecc71);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .login-container {
+        background-color: #fff;
+        padding: 70px;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .login-header {
+        color: #3498db;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .login-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-input {
+        width: 100%;
+        padding: 15px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .login-button {
+        background: linear-gradient(135deg, #e74c3c 0%, #3498db 100%);
+        color: #fff;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .login-button:hover {
+        background: linear-gradient(135deg, #e74c3c 0%, #2980b9 100%);
+    }
+
+    .new-user-button {
+        background: linear-gradient(135deg, #2ecc71 0%, #3498db 100%);
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 10px;
+    }
+
+    .new-user-button:hover {
+        background: linear-gradient(135deg, #2980b9 0%, #2ecc71 100%);
+    }
+</style>
+</head>
+
+<body>
+  <div class="login-container">
+    <h2 class="login-header">Login to DocEase</h2>
+    <form class="login-form">
+      <input type="text" class="form-input" placeholder="Username" required>
+      <input type="password" class="form-input" placeholder="Password" required>
+      <a href="front_pg.html">
+      <button type="button" class="login-button">Login</button>
+    </a>
+    </form>
+      <button class="new-user-button">New-user ? Sign In</button>
+    </a>
+  </div>
+</body>
+
+</html>

@@ -3,146 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hospital Information</title>
+    <title>Hospital Webpage</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
+            padding: 0;
+            background-color: #e6f7ff; /* Light Blue */
         }
-
         header {
-            padding: 1px;
-            color: black;
             text-align: center;
+            padding: 20px;
+            background-color: #3399ff; /* Blue */
+            color: #fff;
         }
-
-        nav {
-            background-color: black;
-            overflow: hidden;
-            display: flex;
-            justify-content: space-around;
-            border-bottom: 1px solid black; /* Add a border below the navbar */
+        section {
+            margin: 20px;
         }
-
-        nav a {
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
+        .hospital-image {
+            width: 100%;
+            max-width: 800px; /* Increased max-width for wider images */
+            max-height: 400px; /* Reduced max-height */
+            margin: 20px auto;
+            display: block;
         }
-
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        .search-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 14px;
-        }
-
-        input[type=text] {
-            padding: 10px;
-            font-size: 17px;
-            border: 1px solid black; /* Add a border to the search input */
-            border-radius: 20px;
-            width: 300px; /* Adjust the width as needed */
-        }
-
-        #hospitals {
+        .doctor-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            padding: 20px;
         }
-
-        .hospital {
+        .doctor {
             width: 30%;
             margin: 10px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        /* Different colors for each doctor */
+        .doctor:nth-child(odd) {
+            background-color: #ffcccb; /* Light Coral */
+        }
+        .doctor:nth-child(even) {
+            background-color: #ffcccb; /* Light Green */
+        }
+        .doctor:hover {
+            transform: scale(1.05);
+        }
+        .doctor img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        h3 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .doctor img {
+            width: 100%;
+            border-radius: 0%; /* Set border-radius to 0% for square images */
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+        .hospital-image {
+            width: 100%;
+            max-width: 800px; /* Set a larger max-width for the hospital image */
+            max-height: 400px; /* Set a reduced max-height */
+            margin: 20px auto;
+            display: block;
+        }
+        header {
+            text-align: center;
             padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
+            background: linear-gradient(135deg, #3498db, #2ecc71); /* Gradient from Light Blue to Light Green */
+            color: #fff;
         }
 
-        footer {
-            background-color: black;
-            color: white;
-            padding: 0px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        header h1 {
+            margin: 0; /* Remove default margin for h1 */
+            font-size: 2em; /* Adjust the font size as needed */
+            border-radius: 10px; /* Add rounded corners for a stylish look */
+        }
+
+        /* Additional styling for hyperlinks */
+        .doctor a {
+            text-decoration: none;
+            color: inherit; /* Inherit the color from the parent */
         }
     </style>
 </head>
 <body>
-
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Login</a>
-    </nav>
-
     <header>
-        <h1>Hospitals In Your Area</h1>
+        <h1 >Apollo Hospitals</h1> <!-- Dark Blue -->
     </header>
-
-    <div class="search-container">
-        <form action="#">
-            <input type="text" placeholder="Search..." name="search">
-        </form>
-    </div>
-
-    <div id="hospitals">
-        <div class="hospital">
-            <img src="hospital1.jpg" alt="Hospital 1 Image" style="width:100%">
-            <h2>Hospital Name 1</h2>
-            <p>Address: City, State</p>
+    <section>
+        <img class="hospital-image" src="hosp1.jpg" alt="Hospital Image">
+        <p>Hospital Address: 123 Hospital Street, Cityville</p>
+        <div class="doctor-container">
+            <!-- Doctor 1 -->
+            <div class="doctor" onclick="goToDoctorPage('Dr. John Doe', 'doctor1.html')">
+                <a href="H1_D1.html">
+                    <img src="img/Doc1_img.jpg" alt="Doctor 1">
+                    <h3>Dr. John Doe</h3>
+                    <p>Education: MD, Medical University</p>
+                    <p>Experience: 10 years</p>
+                </a>
+            </div>
+            <!-- Doctor 2 -->
+            <div class="doctor" onclick="goToDoctorPage('Dr. Jane Smith', 'doctor2.html')">
+                <a href="doctor2.html">
+                    <img src="doc3.jpg" alt="Doctor 2">
+                    <h3>Dr. Jane Smith</h3>
+                    <p>Education: PhD, Healthcare Sciences</p>
+                    <p>Experience: 8 years</p>
+                </a>
+            </div>
+            <!-- Doctor 3 -->
+            <div class="doctor" onclick="goToDoctorPage('Dr. Michael Johnson', 'doctor3.html')">
+                <a href="doctor3.html">
+                    <img src="doc4.jpg" alt="Doctor 3">
+                    <h3>Dr. Michael Johnson</h3>
+                    <p>Education: MBBS, Medical College</p>
+                    <p>Experience: 12 years</p>
+                </a>
+            </div>
+            <!-- Doctor 4 -->
+            <div class="doctor" onclick="goToDoctorPage('Dr. Emily Brown', 'doctor4.html')">
+                <a href="doctor4.html">
+                    <img src="doc5.jpg" alt="Doctor 4">
+                    <h3>Dr. Emily Brown</h3>
+                    <p>Education: MD, Health Sciences</p>
+                    <p>Experience: 6 years</p>
+                </a>
+            </div>
+            <!-- Doctor 5 -->
+            <div class="doctor" onclick="goToDoctorPage('Dr. William Davis', 'doctor5.html')">
+                <a href="doctor5.html">
+                    <img src="doc6.jpg" alt="Doctor 5">
+                    <h3>Dr. William Davis</h3>
+                    <p>Education: MBBS, Medical University</p>
+                    <p>Experience: 9 years</p>
+                </a>
+            </div>
+            <!-- Doctor 6 -->
+            <div class="doctor" onclick="goToDoctorPage('Dr. Sarah White', 'doctor6.html')">
+                <a href="doctor6.html">
+                    <img src="doc7.jpg" alt="Doctor 6">
+                    <h3>Dr. Sarah White</h3>
+                    <p>Education: PhD, Healthcare Sciences</p>
+                    <p>Experience: 7 years</p>
+                </a>
+            </div>
+            <!-- Add more doctors with different colors -->
         </div>
 
-        <div class="hospital">
-            <img src="hospital2.jpg" alt="Hospital 2 Image" style="width:100%">
-            <h2>Hospital Name 2</h2>
-            <p>Address: City, State</p>
-        </div>
-
-        <!-- Hospital 3 -->
-        <div class="hospital">
-            <img src="hospital3.jpg" alt="Hospital 3 Image" style="width:100%">
-            <h2>Hospital Name 3</h2>
-            <p>Address: City, State</p>
-        </div>
-
-        <!-- Hospital 4 -->
-        <div class="hospital">
-            <img src="hospital4.jpg" alt="Hospital 4 Image" style="width:100%">
-            <h2>Hospital Name 4</h2>
-            <p>Address: City, State</p>
-        </div>
-
-        <!-- Hospital 5 -->
-        <div class="hospital">
-            <img src="hospital5.jpg" alt="Hospital 5 Image" style="width:100%">
-            <h2>Hospital Name 5</h2>
-            <p>Address: City, State</p>
-        </div>
-
-        <!-- Hospital 6 -->
-        <div class="hospital">
-            <img src="hospital6.jpg" alt="Hospital 6 Image" style="width:100%">
-            <h2>Hospital Name 6</h2>
-            <p>Address: City, State</p>
-        </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 Hospital Information. All rights reserved.</p>
-    </footer>
-
+        <script>
+            function goToDoctorPage(doctorName, doctorPage) {
+                window.location.href = doctorPage;
+            }
+        </script>
+    </section>
 </body>
 </html>
